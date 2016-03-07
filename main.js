@@ -17,7 +17,7 @@ function formatTime() {
 	currentMinute = today.getMinutes();
 	currentSecond = today.getSeconds();
 
-currentHour < 10 ? "0" : " "; + currentHour;
+	var mornHour = (currentHour < 10 ? "0" : " ") + currentHour;
 
 }
 
