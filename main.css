@@ -1,0 +1,37 @@
+.current_time {
+	height: 450px;
+	width: 500px;
+	border: 1px solid #ccc;
+	margin: auto;
+	background-color: #ddeeff;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 70px;
+	text-align: center;
+	color: #164472;
+}
+
+p.working_time  {
+	margin-top: 170px;
+}
+
+
+.color_time {
+	height: 300px;
+	width: 500px;
+	padding-top: 170px;
+	border: 1px solid #ccc;
+	margin: auto;
+	margin-top: 70px;
+	font-family: 'Architects Daughter', cursive;
+	/*z-index: -1;*/
+	font-size: 70px;
+	text-align: center;
+	color: white;
+	position: relative;
+}
+
+/*.hex_time p {
+	position: absolute;
+	top: 200px;
+}*/
+

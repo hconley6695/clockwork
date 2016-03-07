@@ -34,7 +34,7 @@ var clockDisplay = mornHour + ":" + mornMin + ":" + mornSecond;
  	workingClock.textContent = clockDisplay;
  };
 //PUT SETINTERVAL BACK INTO CODE!!!
-//	setInterval(formatTime, 1000);
+	setInterval(formatTime, 1000);
 
 
 // }, 1000);
@@ -47,11 +47,12 @@ function formatColorHex() {
 	currentMinute = today.getMinutes();
 	currentSecond = today.getSeconds();
 
-	var mornHour = (currentHour < 10 ? "0" : " ") + currentHour;
-	var mornMin = (currentMinute < 10 ? "0" : " ") + currentMinute;
-	var mornSecond = (currentSecond < 10 ? "0" : " ") + currentSecond;
+	var mornHour = (currentHour < 10 ? "0" : "") + currentHour;
+	var mornMin = (currentMinute < 10 ? "0" : "") + currentMinute;
+	var mornSecond = (currentSecond < 10 ? "0" : "") + currentSecond;
 //return
 var clockDisplay = "#" + mornHour + mornMin + mornSecond;
+
 //console.log(clockDisplay);
 //}
 
@@ -60,12 +61,15 @@ var clockDisplay = "#" + mornHour + mornMin + mornSecond;
 // 	//return (mornHour + ":" + currentMinute + ":" + currentSecond);
 // 	//return 
 // 	//formatTime;
+	//document.body.style.background = clockDisplay;
+	//document.body.color_time.style.background = clockDisplay;
+	document.getElementById("chosenColor").style.backgroundColor = clockDisplay;
 
- 	var colorClock = document.querySelector('.hex_time');
+ 	var colorClock = document.querySelector('#chosenColor');
  	colorClock.textContent = clockDisplay;
  };
 //PUT SETINTERVAL BACK INTO CODE!!!
-//	setInterval(formatColorHex, 1000);
+	setInterval(formatColorHex, 1000);
 
 
 
