@@ -9,7 +9,6 @@ var currentHour, currentMinute, currentSecond;
 //first-defined what hour, minute, second were.  gave expressions
 //sec--
 
-
 function formatTime() {
 	var today = new Date();
 
@@ -18,14 +17,15 @@ function formatTime() {
 	currentSecond = today.getSeconds();
 
 	var mornHour = (currentHour < 10 ? "0" : " ") + currentHour;
-
+	return (mornHour + ":" + currentMinute + ":" + currentSecond);
 }
 
-setInterval(function() {
+var changeTime = setInterval(function() {
+	//return (mornHour + ":" + currentMinute + ":" + currentSecond);
+	return formatTime;
+}, 1000);
 
-
-
-} 1000);
-
+var workingClock = document.querySelector('.working_time');
+workingClock.textContent = changeTime;
 
 
